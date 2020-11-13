@@ -1,0 +1,107 @@
+@import "../typography/_headlines";
+@import "../../vars/spacing/_padding";
+@import "../../vars/colors/_colors";
+
+.btn() {
+    .button-text() !important;
+    align-items: center !important;
+    background-color: @default !important;
+    border-color: @default !important;
+    border-radius: 4px !important;
+    color: @dark !important;
+    cursor: pointer !important;
+    display: flex !important;
+    flex: 0 0 auto;
+    height: 36px !important;
+    letter-spacing: .0892857143em;
+    justify-content: center;
+    min-width: 64px !important;
+    outline: 0;
+    position: relative;
+    padding: 0 @padding-4 !important;
+    text-decoration: none;
+    text-indent: .0892857143em;
+    transition-duration: .28s;
+    transition-property: box-shadow,transform,opacity;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    &:before {
+        border-radius: inherit;
+        bottom: 0;
+        color: inherit;
+        content: "";
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity .2s cubic-bezier(.4,0,.6,1);
+        background-color: currentColor;
+    }
+    &:hover:before {
+        opacity: .08;
+    }
+}
+
+.btn-primary() {
+    .btn();
+    background-color: @primary !important;
+    border-color: @primary !important;
+    color: @white !important;
+}
+
+.btn-secondary() {
+    .btn();
+    background-color: @gray-darker !important;
+    border-color: @gray-darker !important;
+    color: @white !important;
+}
+
+.btn-success() {
+    .btn();
+    background-color: @green-base !important;
+    border-color: @green-base !important;
+    color: @white !important;
+}
+
+
+.btn-danger() {
+    .btn();
+    background-color: @red-base !important;
+    border-color: @red-base !important;
+    color: @white !important;
+}
+
+.btn-warning() {
+    .btn();
+    background-color: @yellow-base !important;
+    border-color: @yellow-base !important;
+    color: @black !important;
+}
+
+.btn-info() {
+    .btn();
+    background-color: @cyan !important;
+    border-color: @cyan !important;
+    color: @white !important;
+}
+
+.btn-light() {
+    .btn();
+    background-color: @gray-lightest !important;
+    border-color: @gray-lightest !important;
+    color: @black !important;
+}
+
+.btn-dark() {
+    .btn();
+    background-color: @black !important;
+    border-color: @black !important;
+    color: @white !important;
+}
